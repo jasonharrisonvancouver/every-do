@@ -33,7 +33,7 @@
     // from the segue
  //   self.task = task;
     
-    NSLog(@"the title is %@", self.task.title);
+  //  NSLog(@"the title is %@", self.task.title);
     self.labelTitle.text = self.task.title;
     self.labelDescription.text = self.task.details;
    // self.labelPriority.text = task.priorityLevel;
