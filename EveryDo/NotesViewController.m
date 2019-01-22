@@ -9,6 +9,7 @@
 #import "NotesViewController.h"
 #import "Notebook.h"
 #import "ToDoTableViewCell.h"
+#import "SingleTaskViewController.h"
 
 @interface NotesViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -94,4 +95,23 @@
  <#code#>
  }
  */
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"viewTaskDetailsSegue" sender:indexPath];
+
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(NSIndexPath *)sender{
+    if ([[segue identifier] isEqualToString:@"viewTaskDetailsSegue"]){
+
+        ToDo *task = self.notes[sender.row];
+        SingleTaskViewController* sVC = [segue destinationViewController];
+        sVC.task = task;
+    }
+}
+
+
+
+
+
 @end
