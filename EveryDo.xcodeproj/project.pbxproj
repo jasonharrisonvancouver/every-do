@@ -17,6 +17,7 @@
 		9FFE514721F79B6700B669E5 /* EveryDoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE514621F79B6700B669E5 /* EveryDoUITests.m */; };
 		9FFE515621F79BE800B669E5 /* ToDo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE515521F79BE800B669E5 /* ToDo.m */; };
 		9FFE515921F79D5C00B669E5 /* Notebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE515821F79D5C00B669E5 /* Notebook.m */; };
+		9FFE515F21F7AF4A00B669E5 /* ToDoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE515E21F7AF4A00B669E5 /* ToDoTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		9FFE515521F79BE800B669E5 /* ToDo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDo.m; sourceTree = "<group>"; };
 		9FFE515721F79D5C00B669E5 /* Notebook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notebook.h; sourceTree = "<group>"; };
 		9FFE515821F79D5C00B669E5 /* Notebook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Notebook.m; sourceTree = "<group>"; };
+		9FFE515D21F7AF4A00B669E5 /* ToDoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoTableViewCell.h; sourceTree = "<group>"; };
+		9FFE515E21F7AF4A00B669E5 /* ToDoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				9FFE512521F79B6600B669E5 /* NotesViewController.h */,
 				9FFE512621F79B6600B669E5 /* NotesViewController.m */,
 				9FFE512821F79B6600B669E5 /* Main.storyboard */,
+				9FFE515D21F7AF4A00B669E5 /* ToDoTableViewCell.h */,
+				9FFE515E21F7AF4A00B669E5 /* ToDoTableViewCell.m */,
 				9FFE512B21F79B6600B669E5 /* Assets.xcassets */,
 				9FFE512D21F79B6600B669E5 /* LaunchScreen.storyboard */,
 				9FFE513021F79B6600B669E5 /* Info.plist */,
@@ -275,6 +280,7 @@
 				9FFE515921F79D5C00B669E5 /* Notebook.m in Sources */,
 				9FFE512721F79B6600B669E5 /* NotesViewController.m in Sources */,
 				9FFE513221F79B6600B669E5 /* main.m in Sources */,
+				9FFE515F21F7AF4A00B669E5 /* ToDoTableViewCell.m in Sources */,
 				9FFE512421F79B6600B669E5 /* AppDelegate.m in Sources */,
 				9FFE515621F79BE800B669E5 /* ToDo.m in Sources */,
 			);

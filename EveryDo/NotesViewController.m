@@ -8,6 +8,7 @@
 
 #import "NotesViewController.h"
 #import "Notebook.h"
+#import "ToDoTableViewCell.h"
 
 @interface NotesViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -32,11 +33,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"importantNotesCell" forIndexPath:indexPath];
+    ToDoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"importantNotesCell" forIndexPath:indexPath];
     
     
-    //NSLog(@"title is %@", [self.notes[indexPath.row] title]);
-    cell.textLabel.text = [self.notes[indexPath.row] title];
+    [cell configureToDoCell:self.notes[indexPath.row]];
+    
+    
     
     return cell;
 }
