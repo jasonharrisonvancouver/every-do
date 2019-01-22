@@ -7,10 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ToDo.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Notebook : NSObject
+
+
+- (NSMutableArray<ToDo *>*)getNotes;
 
 @end
 

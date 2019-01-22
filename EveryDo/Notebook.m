@@ -7,7 +7,6 @@
 //
 
 #import "Notebook.h"
-#import "ToDo.h"
 
 @implementation Notebook
 
@@ -16,6 +15,8 @@
     NSMutableArray<ToDo *> *notes;
     
     ToDo *todo1 = [[ToDo alloc] initWithTitle:@"Buy oranges" andDetails:@"Buy those mandarin oranges that Rachel loves" andPriority:MODERATE andCompleted:NO];
+    
+    //NSLog(@"?????????????????????????????%@", todo1.title);
     
     ToDo *todo2 = [[ToDo alloc] initWithTitle:@"Email Jean" andDetails:@"Book off summer vacation dates from PTS" andPriority:URGENT andCompleted:NO];
     ToDo *todo3 = [[ToDo alloc] initWithTitle:@"Call Cassandra" andDetails:@"Talk about setting up a house fund to buy a new house in five years" andPriority:URGENT andCompleted:NO];
@@ -35,6 +36,8 @@
     ToDo *todo17 = [[ToDo alloc] initWithTitle:@"Art classes?" andDetails:@"look into denecroft art classes for me, or at least make time to do more drawing and maybe even painting" andPriority:NO_RUSH andCompleted:NO];
     ToDo *todo18 = [[ToDo alloc] initWithTitle:@"Email Sandy" andDetails:@"about jaden" andPriority:NO_RUSH andCompleted:NO];
     ToDo *todo19 = [[ToDo alloc] initWithTitle:@"justin" andDetails:@"ask how the girls are doing etc...." andPriority:URGENT andCompleted:NO];
+    notes = [[NSMutableArray<ToDo *> alloc] init];
+    
     [notes addObject:todo1];
     [notes addObject:todo2];
     [notes addObject:todo3];
@@ -55,7 +58,7 @@
     [notes addObject:todo18];
     [notes addObject:todo19];
     
-
+   // NSLog(@"note is %@", notes[0].title);
                                      
     return notes;
 }
