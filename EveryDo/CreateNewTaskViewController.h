@@ -1,5 +1,5 @@
 //
-//  SingleTaskViewController.h
+//  CreateNewTaskViewController.h
 //  EveryDo
 //
 //  Created by jason harrison on 2019-01-22.
@@ -7,16 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ToDo.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SingleTaskViewController : UIViewController
-
-@property (nonatomic, strong, readwrite)ToDo *task;
-
-- (void)showDetailsForTask;//{//:(ToDo *)task{
-
+@interface CreateNewTaskViewController : UIViewController
 
 @end
 

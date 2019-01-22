@@ -19,6 +19,7 @@
 		9FFE515921F79D5C00B669E5 /* Notebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE515821F79D5C00B669E5 /* Notebook.m */; };
 		9FFE515F21F7AF4A00B669E5 /* ToDoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE515E21F7AF4A00B669E5 /* ToDoTableViewCell.m */; };
 		9FFE516221F7BF5800B669E5 /* SingleTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE516121F7BF5800B669E5 /* SingleTaskViewController.m */; };
+		9FFE516521F7CEA700B669E5 /* CreateNewTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE516421F7CEA700B669E5 /* CreateNewTaskViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		9FFE515E21F7AF4A00B669E5 /* ToDoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoTableViewCell.m; sourceTree = "<group>"; };
 		9FFE516021F7BF5800B669E5 /* SingleTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleTaskViewController.h; sourceTree = "<group>"; };
 		9FFE516121F7BF5800B669E5 /* SingleTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleTaskViewController.m; sourceTree = "<group>"; };
+		9FFE516321F7CEA700B669E5 /* CreateNewTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateNewTaskViewController.h; sourceTree = "<group>"; };
+		9FFE516421F7CEA700B669E5 /* CreateNewTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateNewTaskViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				9FFE512521F79B6600B669E5 /* NotesViewController.h */,
 				9FFE512621F79B6600B669E5 /* NotesViewController.m */,
 				9FFE512821F79B6600B669E5 /* Main.storyboard */,
+				9FFE516321F7CEA700B669E5 /* CreateNewTaskViewController.h */,
+				9FFE516421F7CEA700B669E5 /* CreateNewTaskViewController.m */,
 				9FFE516021F7BF5800B669E5 /* SingleTaskViewController.h */,
 				9FFE516121F7BF5800B669E5 /* SingleTaskViewController.m */,
 				9FFE515D21F7AF4A00B669E5 /* ToDoTableViewCell.h */,
@@ -282,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFE516521F7CEA700B669E5 /* CreateNewTaskViewController.m in Sources */,
 				9FFE515921F79D5C00B669E5 /* Notebook.m in Sources */,
 				9FFE516221F7BF5800B669E5 /* SingleTaskViewController.m in Sources */,
 				9FFE512721F79B6600B669E5 /* NotesViewController.m in Sources */,
