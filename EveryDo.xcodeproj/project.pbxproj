@@ -15,6 +15,8 @@
 		9FFE513221F79B6600B669E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE513121F79B6600B669E5 /* main.m */; };
 		9FFE513C21F79B6700B669E5 /* EveryDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE513B21F79B6700B669E5 /* EveryDoTests.m */; };
 		9FFE514721F79B6700B669E5 /* EveryDoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE514621F79B6700B669E5 /* EveryDoUITests.m */; };
+		9FFE515621F79BE800B669E5 /* ToDo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE515521F79BE800B669E5 /* ToDo.m */; };
+		9FFE515921F79D5C00B669E5 /* Notebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE515821F79D5C00B669E5 /* Notebook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		9FFE514221F79B6700B669E5 /* EveryDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EveryDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFE514621F79B6700B669E5 /* EveryDoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EveryDoUITests.m; sourceTree = "<group>"; };
 		9FFE514821F79B6700B669E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FFE515421F79BE800B669E5 /* ToDo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDo.h; sourceTree = "<group>"; };
+		9FFE515521F79BE800B669E5 /* ToDo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDo.m; sourceTree = "<group>"; };
+		9FFE515721F79D5C00B669E5 /* Notebook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notebook.h; sourceTree = "<group>"; };
+		9FFE515821F79D5C00B669E5 /* Notebook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Notebook.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				9FFE512221F79B6600B669E5 /* AppDelegate.h */,
+				9FFE515421F79BE800B669E5 /* ToDo.h */,
+				9FFE515521F79BE800B669E5 /* ToDo.m */,
+				9FFE515721F79D5C00B669E5 /* Notebook.h */,
+				9FFE515821F79D5C00B669E5 /* Notebook.m */,
 				9FFE512321F79B6600B669E5 /* AppDelegate.m */,
 				9FFE512521F79B6600B669E5 /* ViewController.h */,
 				9FFE512621F79B6600B669E5 /* ViewController.m */,
@@ -262,9 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFE515921F79D5C00B669E5 /* Notebook.m in Sources */,
 				9FFE512721F79B6600B669E5 /* ViewController.m in Sources */,
 				9FFE513221F79B6600B669E5 /* main.m in Sources */,
 				9FFE512421F79B6600B669E5 /* AppDelegate.m in Sources */,
+				9FFE515621F79BE800B669E5 /* ToDo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
