@@ -126,12 +126,26 @@
       //  ToDo *task = self.notes[sender.row];
         CreateNewTaskViewController* cVC = [segue destinationViewController];
        // sVC.task = task;
-       
+       // notify ME when the recipient of this segue is done
         cVC.delegate = self;
        
     }
 }
 
+
+
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath* )indexPath{
+    return  YES;
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath* )indexPath{
+    [UIView animateWithDuration:2 animations:^{
+        [self.notes removeObject:self.notes[indexPath.row]];
+        
+        [self.tableView reloadData];
+    }];
+    
+}
 
 
 
