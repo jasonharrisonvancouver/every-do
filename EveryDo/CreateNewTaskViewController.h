@@ -7,10 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ToDo.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+// step 1 of delegate
+@protocol AddNewTaskDelegate <NSObject>
+
+
+
+- (void)addNewTask:(ToDo *)newTask;
+
+@end
+
 @interface CreateNewTaskViewController : UIViewController
+
+
+// step 2 of delegate
+@property (weak, nonatomic) id<AddNewTaskDelegate> delegate;
+
 
 @end
 

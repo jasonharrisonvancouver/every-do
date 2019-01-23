@@ -10,8 +10,9 @@
 #import "Notebook.h"
 #import "ToDoTableViewCell.h"
 #import "SingleTaskViewController.h"
+#import "CreateNewTaskViewController.h"
 
-@interface NotesViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface NotesViewController ()<UITableViewDelegate, UITableViewDataSource, AddNewTaskDelegate>
 
 @property (nonatomic, strong, readwrite)NSMutableArray<ToDo *> *notes;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -31,6 +32,14 @@
     // Do any additional setup after loading the view, typically from a nib.
     Notebook *notebook = [[Notebook alloc] init];
     self.notes = [notebook getNotes];
+}
+
+
+// step 4 of delegate with CreateNewTaskViewController
+- (void)addNewTask:(ToDo *)newTask{
+    NSLog(@"delegate has added new task for %@", newTask.title);
+    [self.notes addObject:newTask];
+    [self.tableView reloadData];
 }
 
 
@@ -109,6 +118,17 @@
         ToDo *task = self.notes[sender.row];
         SingleTaskViewController* sVC = [segue destinationViewController];
         sVC.task = task;
+    }
+    
+    else if ([[segue identifier] isEqualToString:@"createNewTaskSegue"]){
+        NSLog(@"creating new task via segue");
+      
+      //  ToDo *task = self.notes[sender.row];
+        CreateNewTaskViewController* cVC = [segue destinationViewController];
+       // sVC.task = task;
+       
+        cVC.delegate = self;
+       
     }
 }
 
